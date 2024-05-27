@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Tráfego</title>
+    <link rel="icon" href="©2024 Bianca Hoover..png" type="image/png">
+
+    <style>
+        body {
+            background-image: url('©2024 Bianca Hoover..png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .telegram-button {
+            background-color: #0088cc; /* Cor azul do Telegram */
+            color: #fff; /* Cor do texto */
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite alternate; /* Efeito de pulsação */
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remover sublinhado do link */
+        }
+
+        .telegram-button:hover {
+            background-color: #005580; /* Cor mais escura ao passar o mouse */
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão inteligente -->
+    <a href="#" id="telegram-button" class="telegram-button">CANAL NO TELEGRAM</a>
+
+    <script>
+        // Função para identificar a fonte de acesso e redirecionar o usuário
+        function redirecionarUsuario() {
+            var userAgent = navigator.userAgent.toLowerCase();
+
+            // Verificar se o usuário está acessando pelo Facebook
+            if (userAgent.includes("facebook")) {
+                window.location.href = "https://t.me/+SVFbvKM9LwQ2YTgx";
+            }
+            // Verificar se o usuário está acessando pelo Instagram
+            else if (userAgent.includes("instagram")) {
+                window.location.href = "https://t.me/+NTRzV88MRW83Yzgx";
+            }
+            // Caso contrário, redirecionar para outras fontes de acesso
+            else {
+                window.location.href = "https://t.me/+bIKwVhlUB5MzYWZh";
+            }
+        }
+
+        // Adicionar evento de clique ao botão para chamar a função
+        document.getElementById("telegram-button").addEventListener("click", redirecionarUsuario);
+    </script>
+</body>
+</html>
